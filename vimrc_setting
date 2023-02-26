@@ -1,0 +1,29 @@
+"Delete explaination after double quote if you like to
+"Syntax Highlighting On 語法上色顯示
+syntax on
+"auto indent 自動縮排
+set ai
+"Add Numbers 顯示行號
+set nu
+"Highlight Cursor Line(Horizontally) 顯示目前編輯行位置
+set cursorline
+"displays the cursor position(its on by default) 顯示行,列資訊
+set ruler
+"Set tab width to 4 columns 設定Tab寬度為4
+set tabstop=4
+set "enable mouse support 啟用游標選取
+set mouse=a
+"Set last 100 commands to save in history 保留100 個使用過的指令
+set history=100
+
+" *Key Mapping*
+"Enter '(', auto fill-in ')' and get in Command-mode -> Insert-mode, which will move insert place in the middle of brackets
+inoremap ( ()<Esc>i
+"Enter '"', auto fill-in another '"' and get in Command-mode -> Insert-mode, which will move insert place in the middle of double quotes
+inoremap " ""<Esc>i
+"Enter ''', auto fill-in another ''' and get in Command-mode -> Insert-mode, which will move insert place in the middle of single quotes
+inoremap ' ''<Esc>i 
+"Enter '[', auto fill-in ']' and get in Command-mode -> Insert-mode, which will move insert place in the middle of brackets
+inoremap [ []<Esc>i
+"Enter '{' + Enter, auto fill-in '}' and add a line between 輸入{加換行，vim自動輸入} 並在中間加新一行
+inoremap {<CR> {<CR>}<Esc>ko
